@@ -7,13 +7,13 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DatasourceOfAddProduct {
-	
+public class DataSourceOfLogin {
 public static String[][] Customerdata(String sheetname) throws Throwable {
 		
-	    File file = new File("C:\\Users\\admin\\git\\Empirehome_crm_VR\\Empirehomecrm\\src\\main\\java\\com\\testdata\\empireproduct.xlsx");
+	    File file = new File("./src/main/java/com/testdata/EmpHome.xlsx");
 		FileInputStream stream = new FileInputStream(file);
-		XSSFWorkbook workbook = new XSSFWorkbook(stream);
+		XSSFWorkbook workbook = new XSSFWorkbook(stream)
+;
 		XSSFSheet sheet = workbook.getSheet(sheetname);
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cells = sheet.getRow(1).getLastCellNum();
@@ -32,5 +32,4 @@ public static String[][] Customerdata(String sheetname) throws Throwable {
 		return data;
 
 }
-
 }
