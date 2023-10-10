@@ -12,18 +12,20 @@ import com.base.Basetest;
 import net.bytebuddy.asm.Advice.This;
 
 public class Loginpage extends Basetest{
-@FindBy(xpath = "http://empirehome.myprojectsonline.co.in/" )
+@FindBy(xpath = "//input[@placeholder='example@gmail.com']" )
 	WebElement Email ;
-@FindBy(xpath = "http://empirehome.myprojectsonline.co.in/")
+@FindBy(xpath = "//input[@id='pword']")
  WebElement password ;
+@FindBy(xpath = "//button[@class='btn green_btn']")
+WebElement Login;
 
 public Loginpage() {
 	PageFactory.initElements(driver,this);
 	}
-public void Loginverification(String Username, String Password) {
-	Email.sendKeys(Username);
-	password.sendKeys(Password);
-	
+public void Loginverification() {
+	Email.sendKeys(prop.getProperty("Username"));
+	password.sendKeys(prop.getProperty("Password"));
+	Login.click();
 	
 }
 }

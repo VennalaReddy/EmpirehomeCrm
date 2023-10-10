@@ -11,7 +11,7 @@ public class DatasourceOfAddProduct {
 	
 public static String[][] Customerdata(String sheetname) throws Throwable {
 		
-	    File file = new File("C:\\Users\\admin\\git\\Empirehome_crm_VR\\Empirehomecrm\\src\\main\\java\\com\\testdata\\empireproduct.xlsx");
+	    File file = new File("./src/main/java/com/testdata/Vacuum SELLWIZE1.xlsx");
 		FileInputStream stream = new FileInputStream(file);
 		XSSFWorkbook workbook = new XSSFWorkbook(stream);
 		XSSFSheet sheet = workbook.getSheet(sheetname);
