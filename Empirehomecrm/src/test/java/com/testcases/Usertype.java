@@ -18,16 +18,16 @@ public class Usertype extends Basetest{
 	}
 	
 	@BeforeMethod
-	public void MAX() {
+	public void Setup() {
 		initialization();
 		LP = new Loginpage();
+		LP.Loginverification();
 		UTF = new Usertypefunctionality();
 }
 	
    @Test
-   public void MAX1() throws Throwable {
-	   LP.Loginverification();
-	   UTF.verifyUsertypefunctionality();
+   public void UserTypeValidation() throws Throwable {
+	   UTF.verifyUsertype();
 	   String urltest = driver.getCurrentUrl();
 	   Assert.assertEquals(urltest,"http://empirehome.myprojectsonline.co.in/Master/UserTypes");
    }

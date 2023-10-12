@@ -13,19 +13,19 @@ import org.testng.annotations.Test;
 
 import com.base.Basetest;
 import com.pageobjects.LoginFunctinalitymultipledata;
-import com.utils.DataSourceOfLogin;
+import com.utils.Utils;
 
 import net.bytebuddy.implementation.bind.annotation.Super;
 
 public class Logintextwithmultipledata extends Basetest{
 	LoginFunctinalitymultipledata lf;
-	private final String sheetname = "Sheet1";
+	private final String sheetname = "Login";
 	public Logintextwithmultipledata() {
 		super();
 }
 @DataProvider
 public String [][] dataload() throws Throwable {
-	return  DataSourceOfLogin.Customerdata(sheetname);
+	return Utils.Customerdata(sheetname);
 }
 	
 @BeforeMethod

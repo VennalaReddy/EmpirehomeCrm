@@ -7,11 +7,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.base.Basetest;
-import com.pageobjects.Loginfunctionality;
+import com.pageobjects.LoginFunctinalitymultipledata;
 
 public class Logintest extends Basetest {
 
-	Loginfunctionality lf;
+	LoginFunctinalitymultipledata lf;
 
 	public Logintest() {
 		super();   //invokes the parent class constructor
@@ -22,14 +22,14 @@ public class Logintest extends Basetest {
 
 		initialization();
 
-		lf = new Loginfunctionality();
+		lf = new LoginFunctinalitymultipledata();
 
 	}
 
 	@Test
 
-	public void loginvalidation() {
-		lf.verifylogin();
+	public void loginvalidation(String Username,String Password) {
+		lf.Loginverification(Username,Password );
 		String urltest = driver.getCurrentUrl();
 		Assert.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
 		

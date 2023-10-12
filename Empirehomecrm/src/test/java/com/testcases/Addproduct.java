@@ -12,11 +12,11 @@ import com.base.Basetest;
 
 import com.pageobjects.Addproductfunctionality;
 import com.pageobjects.Loginpage;
-import com.utils.DatasourceOfAddProduct;
+import com.utils.Utils;
 
 public class Addproduct extends Basetest {
 
-	private final String sheetname = "sheet1";
+	private final String sheetname = "Sheet1";
 	Loginpage Login;
 	Addproductfunctionality AddInventory;
 
@@ -26,7 +26,7 @@ public class Addproduct extends Basetest {
 
 	@DataProvider
 	public Object[][] dataload() throws Throwable {
-		return DatasourceOfAddProduct.Customerdata(sheetname);
+		return Utils.Customerdata(sheetname);
 	}
 
 	@BeforeMethod
