@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.Holiday">
+      <class name="com.testcases.Logoutpage">
         <methods>
-          <include name="AddHoliday"/>
-          <include name="teardown"/>
           <include name="Data"/>
+          <include name="AppLogout"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testcases.Holiday -->
+      </class> <!-- com.testcases.Logoutpage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

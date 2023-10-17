@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-13T14:35:02 IST" name="Default suite" finished-at="2023-10-13T14:35:31 IST" duration-ms="29574">
+  <suite started-at="2023-10-17T16:29:51 IST" name="Default suite" finished-at="2023-10-17T16:30:01 IST" duration-ms="9804">
     <groups>
     </groups>
-    <test started-at="2023-10-13T14:35:02 IST" name="Default test" finished-at="2023-10-13T14:35:31 IST" duration-ms="29574">
-      <class name="com.testcases.Holiday">
-        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.Holiday@4145bad8]" started-at="2023-10-13T14:35:02 IST" name="Data" finished-at="2023-10-13T14:35:08 IST" duration-ms="6523" status="PASS">
+    <test started-at="2023-10-17T16:29:51 IST" name="Default test" finished-at="2023-10-17T16:30:01 IST" duration-ms="9804">
+      <class name="com.testcases.Logoutpage">
+        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:29:51 IST" name="Data" finished-at="2023-10-17T16:29:59 IST" duration-ms="7138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Data -->
-        <test-method signature="AddHoliday()[pri:0, instance:com.testcases.Holiday@4145bad8]" started-at="2023-10-13T14:35:08 IST" name="AddHoliday" finished-at="2023-10-13T14:35:31 IST" duration-ms="22918" status="PASS">
+        <test-method signature="AppLogout()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:29:59 IST" name="AppLogout" finished-at="2023-10-17T16:30:01 IST" duration-ms="2562" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddHoliday -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Holiday@4145bad8]" started-at="2023-10-13T14:35:31 IST" name="teardown" finished-at="2023-10-13T14:35:31 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- AppLogout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:30:01 IST" name="teardown" finished-at="2023-10-17T16:30:01 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Holiday -->
+      </class> <!-- com.testcases.Logoutpage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
