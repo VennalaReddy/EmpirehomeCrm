@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-17T16:29:51 IST" name="Default suite" finished-at="2023-10-17T16:30:01 IST" duration-ms="9804">
+  <suite started-at="2023-10-19T16:43:06 IST" name="Default suite" finished-at="2023-10-19T16:43:37 IST" duration-ms="30583">
     <groups>
     </groups>
-    <test started-at="2023-10-17T16:29:51 IST" name="Default test" finished-at="2023-10-17T16:30:01 IST" duration-ms="9804">
-      <class name="com.testcases.Logoutpage">
-        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:29:51 IST" name="Data" finished-at="2023-10-17T16:29:59 IST" duration-ms="7138" status="PASS">
+    <test started-at="2023-10-19T16:43:06 IST" name="Default test" finished-at="2023-10-19T16:43:37 IST" duration-ms="30583">
+      <class name="com.testcases.AddCategory">
+        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:06 IST" name="Data" finished-at="2023-10-19T16:43:13 IST" duration-ms="6952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Data -->
-        <test-method signature="AppLogout()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:29:59 IST" name="AppLogout" finished-at="2023-10-17T16:30:01 IST" duration-ms="2562" status="PASS">
+        <test-method signature="AddCatageoriesData()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:13 IST" name="AddCatageoriesData" finished-at="2023-10-19T16:43:37 IST" duration-ms="23437" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppLogout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logoutpage@63376bed]" started-at="2023-10-17T16:30:01 IST" name="teardown" finished-at="2023-10-17T16:30:01 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- AddCatageoriesData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:37 IST" name="teardown" finished-at="2023-10-19T16:43:37 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Logoutpage -->
+      </class> <!-- com.testcases.AddCategory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

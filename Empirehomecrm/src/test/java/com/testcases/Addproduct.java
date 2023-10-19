@@ -47,6 +47,8 @@ public class Addproduct extends Basetest {
 
 		String urltest = driver.getCurrentUrl();
 		Assert.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/Inventory/All");
+//AssertJUnit.assertTrue(driver.findElement(By.xpath("//span[normalize-space()='Total 1 records']")).isDisplayed());
+	
 	}
 
 	@AfterMethod

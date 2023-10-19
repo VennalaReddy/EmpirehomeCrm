@@ -37,8 +37,9 @@ public void Setup () {
 @Test(dataProvider = "dataload",dataProviderClass = Logintextwithmultipledata.class)
 public void Loginvalidation(String Username, String Password) {
 	lf.Loginverification(Username, Password);
-	String Urltest = driver.getCurrentUrl();
-	Assert.assertEquals(Urltest, "http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
+	String urltest = driver.getCurrentUrl();
+	Assert.assertEquals(urltest, "http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
+	
 	}
 @AfterTest
 public void teardown() {

@@ -30,10 +30,10 @@ public class HolidaysFunctionality extends Basetest{
 	@FindBy(xpath = "//button[normalize-space()='Save']")
 	WebElement Save;
 	
-	@FindBy(xpath = "//tbody/tr[36]/td[5]/a[1]/button[1]/i[1]")
+	@FindBy(xpath = "//tbody/tr[28]/td[5]/a[1]/button[1]/i[1]")
 	WebElement Action;
 	
-	@FindBy(xpath = "//tbody/tr[36]/td[5]/a[2]/button[1]/i[1]")
+	@FindBy(xpath = "//tbody/tr[28]/td[5]/a[2]/button[1]")
 	WebElement Delete;
 	
 	@FindBy(xpath = "//button[@class='swal-button swal-button--yes']")

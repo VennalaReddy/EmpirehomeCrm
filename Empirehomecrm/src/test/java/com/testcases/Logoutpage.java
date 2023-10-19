@@ -1,5 +1,6 @@
 package com.testcases;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,9 +24,10 @@ public class Logoutpage extends Basetest {
    @Test
    public void AppLogout () {
 	   LOF.VerifyLogout();
-	   String urltest = driver.getCurrentUrl();
-	   Assert.assertEquals(urltest,"http://empirehome.myprojectsonline.co.in/");
 	   
+	   String urltest = driver.toString();
+	   Assert.assertEquals(urltest,"http://empirehome.myprojectsonline.co.in/");
+	   //Assert.assertTrue(driver.findElement());
    }
  @AfterMethod 
  public void teardown() {
