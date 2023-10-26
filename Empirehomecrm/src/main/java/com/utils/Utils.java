@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class Utils {
 public static String[][] Customerdata(String sheetname) throws Throwable {
@@ -31,6 +33,11 @@ public static String[][] Customerdata(String sheetname) throws Throwable {
 		}
 		return data;
 
+}
+
+public static void DropDowns(WebElement value,String text ) {
+	Select Sc = new Select(value);
+	Sc.selectByVisibleText(text);
 }
 
 }

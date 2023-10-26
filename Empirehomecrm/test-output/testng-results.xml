@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T16:43:06 IST" name="Default suite" finished-at="2023-10-19T16:43:37 IST" duration-ms="30583">
+  <suite started-at="2023-10-26T19:22:49 IST" name="Default suite" finished-at="2023-10-26T19:23:24 IST" duration-ms="35754">
     <groups>
     </groups>
-    <test started-at="2023-10-19T16:43:06 IST" name="Default test" finished-at="2023-10-19T16:43:37 IST" duration-ms="30583">
-      <class name="com.testcases.AddCategory">
-        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:06 IST" name="Data" finished-at="2023-10-19T16:43:13 IST" duration-ms="6952" status="PASS">
+    <test started-at="2023-10-26T19:22:49 IST" name="Default test" finished-at="2023-10-26T19:23:24 IST" duration-ms="35754">
+      <class name="com.testcases.Sub_Categeories">
+        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.Sub_Categeories@4145bad8]" started-at="2023-10-26T19:22:49 IST" name="Data" finished-at="2023-10-26T19:22:58 IST" duration-ms="9616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Data -->
-        <test-method signature="AddCatageoriesData()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:13 IST" name="AddCatageoriesData" finished-at="2023-10-19T16:43:37 IST" duration-ms="23437" status="PASS">
+        <test-method signature="Sub_CatageoriesData()[pri:0, instance:com.testcases.Sub_Categeories@4145bad8]" started-at="2023-10-26T19:22:58 IST" name="Sub_CatageoriesData" finished-at="2023-10-26T19:23:24 IST" duration-ms="25959" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddCatageoriesData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.AddCategory@4145bad8]" started-at="2023-10-19T16:43:37 IST" name="teardown" finished-at="2023-10-19T16:43:37 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- Sub_CatageoriesData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Sub_Categeories@4145bad8]" started-at="2023-10-26T19:23:24 IST" name="teardown" finished-at="2023-10-26T19:23:24 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.AddCategory -->
+      </class> <!-- com.testcases.Sub_Categeories -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
