@@ -25,8 +25,8 @@ public class Logoutpage extends Basetest {
    public void AppLogout () {
 	   LOF.VerifyLogout();
 	   
-	   String urltest = driver.toString();
-	   Assert.assertEquals(urltest,"http://empirehome.myprojectsonline.co.in/");
+	   String urltest = driver.getCurrentUrl();
+	   Assert.assertEquals(urltest,"urltest,\"http://empirehome.myprojectsonline.co.in/\"");
 	   //Assert.assertTrue(driver.findElement());
    }
  @AfterMethod 

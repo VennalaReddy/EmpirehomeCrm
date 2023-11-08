@@ -21,7 +21,7 @@ public class Basetest {
 	public static Properties prop;
 	FileInputStream file;
 	public static WebDriver driver;
-	//protected ExtentReports extentreports;
+	protected ExtentReports extentreports;
 
 	public Basetest() {
 
@@ -40,10 +40,10 @@ public class Basetest {
 		}
 		
 		
-//		extentreports = new ExtentReports();
-//		ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
-//	    extentreports.attachReporter(spark);
-//	    
+		extentreports = new ExtentReports();
+		ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
+	    extentreports.attachReporter(spark);
+	    
 	  
 
 	}
@@ -66,8 +66,8 @@ public class Basetest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().deleteAllCookies();
 		
-		//WebDriverWait wait = new WebDriverWait(driver, null)
-		//extentreports.flush();
+		WebDriverWait wait = new WebDriverWait(driver, null);
+		extentreports.flush();
 
 	}
 

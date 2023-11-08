@@ -1,11 +1,17 @@
 package com.utils;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.asynchttpclient.request.body.multipart.StringPart;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -38,6 +44,19 @@ public static String[][] Customerdata(String sheetname) throws Throwable {
 public static void DropDowns(WebElement value,String text ) {
 	Select Sc = new Select(value);
 	Sc.selectByVisibleText(text);
-}
+	}
 
+public static void robot(String path) throws Throwable {
+	Robot R = new Robot();
+	R.delay(2000);
+	StringSelection selection = new StringSelection(path);
+	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+
+	R.keyPress(KeyEvent.VK_CONTROL);
+	R.keyPress(KeyEvent.VK_V);
+	R.keyRelease(KeyEvent.VK_V);
+	R.keyRelease(KeyEvent.VK_CONTROL);
+	R.keyPress(KeyEvent.VK_ENTER);
+	R.keyRelease(KeyEvent.VK_ENTER);
+}
 }

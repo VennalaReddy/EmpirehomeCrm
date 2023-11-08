@@ -28,5 +28,10 @@ public void Loginverification() {
 	Login.click();
 	
 }
+public void loginsalespage() {
+	Email.sendKeys(prop.getProperty("Email1"));
+	password.sendKeys(prop.getProperty("password1"));
+	Login.click();
+}
 }
 
