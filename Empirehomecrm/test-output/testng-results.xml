@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-08T16:19:05 IST" name="Default suite" finished-at="2023-11-08T16:19:33 IST" duration-ms="28252">
+  <suite started-at="2023-11-08T18:15:23 IST" name="Default suite" finished-at="2023-11-08T18:15:54 IST" duration-ms="30542">
     <groups>
     </groups>
-    <test started-at="2023-11-08T16:19:05 IST" name="Default test" finished-at="2023-11-08T16:19:33 IST" duration-ms="28252">
-      <class name="com.testcases.Company">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.testcases.Company@2f16c6b3]" started-at="2023-11-08T16:19:05 IST" name="Setup" finished-at="2023-11-08T16:19:11 IST" duration-ms="6602" status="PASS">
+    <test started-at="2023-11-08T18:15:23 IST" name="Default test" finished-at="2023-11-08T18:15:54 IST" duration-ms="30542">
+      <class name="com.testcases.AddLocation">
+        <test-method is-config="true" signature="Data()[pri:0, instance:com.testcases.AddLocation@6fa34d52]" started-at="2023-11-08T18:15:23 IST" name="Data" finished-at="2023-11-08T18:15:29 IST" duration-ms="5423" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="ShiftsfunctionalityValidation()[pri:0, instance:com.testcases.Company@2f16c6b3]" started-at="2023-11-08T16:19:11 IST" name="ShiftsfunctionalityValidation" finished-at="2023-11-08T16:19:33 IST" duration-ms="21536" status="PASS">
+        </test-method> <!-- Data -->
+        <test-method signature="AddNewLocation()[pri:0, instance:com.testcases.AddLocation@6fa34d52]" started-at="2023-11-08T18:15:29 IST" name="AddNewLocation" finished-at="2023-11-08T18:15:54 IST" duration-ms="24941" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShiftsfunctionalityValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Company@2f16c6b3]" started-at="2023-11-08T16:19:33 IST" name="teardown" finished-at="2023-11-08T16:19:33 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- AddNewLocation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.AddLocation@6fa34d52]" started-at="2023-11-08T18:15:54 IST" name="teardown" finished-at="2023-11-08T18:15:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Company -->
+      </class> <!-- com.testcases.AddLocation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

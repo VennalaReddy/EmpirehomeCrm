@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	
+	<listeners>
+		<listener class-name="com.reports.ExtentReporterNG"></listener>
+	</listeners>
+	
+	
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.testcases.Logintest"/>
-      <class name="com.testcases.Logintextwithmultipledata"/>
+		
+		<class name="com.testcases.Logintest"/>
+		<class name="com.testcases.Logintextwithmultipledata"/>
+		
+	  <class name="com.testcases.Shifts"/>
       <class name="com.testcases.Usertype"/>
-      <class name="com.testcases.Addproduct"/>
+      <class name="com.testcases.Sub_Categeories"/>
+      <class name="com.testcases.Company"/>
+     
       <class name="com.testcases.Stock_moving"/>
+      
+      
+      <class name="com.testcases.AddCategory"/>
+      <class name="com.testcases.ProductdealcloseFunctionality"/>
+      <class name="com.testcases.Addproduct"/>
+      <class name="com.testcases.AddCustomer"/>
+      <class name="com.testcases.AddCondition"/>
+      <class name="com.testcases.Holiday"/>
+      <class name="com.testcases.AddLocation"/>
+       <class name="com.testcases.Logoutpage"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+

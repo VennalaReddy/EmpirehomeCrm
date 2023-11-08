@@ -10,7 +10,7 @@ import com.base.Basetest;
 import com.pageobjects.Loginpage;
 import com.pageobjects.StockmoveFunctionality;
 
-import io.reactivex.rxjava3.functions.Action;
+//import io.reactivex.rxjava3.functions.Action;
 
 public class Stock_moving extends Basetest {
  
