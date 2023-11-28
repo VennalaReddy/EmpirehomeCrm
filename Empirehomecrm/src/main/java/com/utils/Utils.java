@@ -8,10 +8,14 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.asynchttpclient.request.body.multipart.StringPart;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -58,5 +62,16 @@ public static void robot(String path) throws Throwable {
 	R.keyRelease(KeyEvent.VK_CONTROL);
 	R.keyPress(KeyEvent.VK_ENTER);
 	R.keyRelease(KeyEvent.VK_ENTER);
+}
+
+public static void captureAndSaveScreenshot(WebDriver driver, String destFilePath) {
+	try {
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(destFilePath);
+		FileUtils.copyFile(srcFile, destFile);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 }

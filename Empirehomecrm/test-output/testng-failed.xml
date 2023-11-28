@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.Logoutpage">
+      <class name="com.testcases.Shifts">
         <methods>
-          <include name="Data"/>
-          <include name="AppLogout"/>
+          <include name="ShiftsfunctionalityValidation"/>
           <include name="teardown"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- com.testcases.Logoutpage -->
+      </class> <!-- com.testcases.Shifts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
